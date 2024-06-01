@@ -2,8 +2,8 @@
 function createDiv(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
-    <div class="columns is-centered">
-        <div class="column" style="width: 20%;">
+    <div class="columns is-centered" style="width: 100%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -17,7 +17,7 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -31,7 +31,7 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -45,7 +45,7 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -59,7 +59,7 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -330,8 +330,8 @@ function createRowdic1(id) {
 function createDivdic2(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
-    <div class="columns is-centered">
-        <div class="column" style="width: 20%;">
+    <div class="columns is-centered" style="width: 100%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -345,7 +345,7 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -359,7 +359,7 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -373,7 +373,7 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
@@ -387,7 +387,7 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column" style="width: 20%;">
+        <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
