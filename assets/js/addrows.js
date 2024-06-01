@@ -2,7 +2,7 @@
 function createDiv(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
-    <div class="columns is-centered" style="width: 100%;">
+    <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
         <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
@@ -138,7 +138,7 @@ function createRow(id) {
 function createDivdic1(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
-    <div class="columns is-centered">
+    <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
         <div class="column"  style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
@@ -330,7 +330,7 @@ function createRowdic1(id) {
 function createDivdic2(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
-    <div class="columns is-centered" style="width: 100%;">
+    <div class="columns is-centered" style="width: 100%;" style="width: 80%;margin-left: auto;margin-right: auto;">
         <div class="column" style="width: 6%;">
             <div class="content">
                 <div class="tab_container">
