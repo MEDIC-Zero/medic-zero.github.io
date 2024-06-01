@@ -3,10 +3,10 @@ function createDiv(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
     <div class="columns is-centered">
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_src.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -17,10 +17,10 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_tgt.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -31,10 +31,10 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_ddim.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -45,10 +45,10 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_ddpm.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -59,10 +59,10 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_sdedit.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -331,10 +331,10 @@ function createDivdic2(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
     <div class="columns is-centered">
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_src.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -345,10 +345,10 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_tgt.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -359,10 +359,10 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/ablation/${index}_dic-cac.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -373,10 +373,10 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column"">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/ablation/${index}_dic-msac.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -387,10 +387,10 @@ function createDivdic2(index) {
                 </p>
             </div>
         </div>
-        <div class="column"">
+        <div class="column" style="width: 20%;">
             <div class="content">
                 <div class="tab_container">
-                    <audio controls>
+                    <audio controls style="width: 100%;">
                         <source src="./demo/ablation/${index}_dic-wohb.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
