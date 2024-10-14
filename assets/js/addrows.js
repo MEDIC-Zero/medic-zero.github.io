@@ -35,20 +35,6 @@ function createDiv(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_ddim.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
-            <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">DDIM.Inv:</strong>
-                </p>
-            </div>
-        </div>
-        <div class="column" style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}_ddpm.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -56,6 +42,20 @@ function createDiv(index) {
             </div>
             <div class="has-text-justified">
                 <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">DDPM.Fri:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}_magus.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}musicmagus"> <strong style="font-size: larger;">MusicMagus:</strong>
                 </p>
             </div>
         </div>
@@ -77,16 +77,16 @@ function createDiv(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_magus.wav" type="audio/mpeg">
+                        <source src="./demo/wavs/${index}_ddim.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}musicmagus"> <strong style="font-size: larger;">MusicMagus:</strong>
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">DDIM.Inv:</strong>
                 </p>
             </div>
-        </div>
+        </div>  
     </div>
     `;
 }
@@ -212,20 +212,6 @@ function createDiv_Delta(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}delta_ddim.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
-            <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">DDIM.Inv:</strong>
-                </p>
-            </div>
-        </div>
-        <div class="column" style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
                         <source src="./demo/wavs/${index}delta_ddpm.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
@@ -233,6 +219,20 @@ function createDiv_Delta(index) {
             </div>
             <div class="has-text-justified">
                 <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">DDPM.Fri:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_magus.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}musicmagus"> <strong style="font-size: larger;">MusicMagus:</strong>
                 </p>
             </div>
         </div>
@@ -254,13 +254,13 @@ function createDiv_Delta(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}delta_magus.wav" type="audio/mpeg">
+                        <source src="./demo/wavs/${index}delta_ddim.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}musicmagus"> <strong style="font-size: larger;">MusicMagus:</strong>
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">DDIM.Inv:</strong>
                 </p>
             </div>
         </div>
