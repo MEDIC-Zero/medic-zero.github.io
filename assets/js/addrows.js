@@ -73,6 +73,20 @@ function createDiv(index) {
                 </p>
             </div>
         </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}_magus.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}musicmagus"> <strong style="font-size: larger;">MusicMagus:</strong>
+                </p>
+            </div>
+        </div>
     </div>
     `;
 }
@@ -82,8 +96,37 @@ function createRow(id) {
 // 循环创建10个div
     rowid = "row"+id
     const rowElement = document.getElementById(rowid);
-    for (let i = id*10; i < 5+id*10; i++) {
+    // for (let j = id*10; j < 5+id*10; j++) {
+    all = 2
+    // if(id == 2) all = 10
+    for (let j = 0; j < all ; j++) {
+        
+        k = j + id*10
         // 创建div
+        i = k
+        //create array
+        if (id == 0) {
+            const a0 = [3,0,2,1,4];
+            if (i == 2) {
+                continue;
+            }
+            i = a0[j]
+            // if (i == 4) {
+            //     i = 5
+            // }
+            // if (i == 5) {
+            //     i = 4
+            // }
+        }
+        if (id == 2) {
+            const a2 = [21,22];
+            i = a2[j]   
+        }
+        if (id == 4) {
+            if (i == 44) {
+                continue;
+            }
+        }
         const index = String(i).padStart(6, '0');
         const div = createDiv(index);
         // 将div添加到页面中，这里假设你要添加到body中
@@ -127,11 +170,164 @@ function createRow(id) {
             document.getElementById(index+'ddim').innerHTML += parts.join('');
             document.getElementById(index+'ddpm').innerHTML += parts.join('');                                    
             document.getElementById(index+'sdedit').innerHTML += parts.join('');
+            document.getElementById(index+'musicmagus').innerHTML += parts.join('');
           });
         });
     }
 }
 
+function createDiv_Delta(index) {
+    // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
+    return `
+    <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_gt.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">Source:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_ours.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">MEDIC:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_ddim.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">DDIM.Inv:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_ddpm.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">DDPM.Fri:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_sdedit.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">SDEdit:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demo/wavs/${index}delta_magus.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}musicmagus"> <strong style="font-size: larger;">MusicMagus:</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
+}
+
+// 创建一个函数，用于生成HTML字符串
+function createRow_Delta(id) {
+// 循环创建10个div
+    rowid = "row_delta"+id
+    const rowElement = document.getElementById(rowid);
+    // for (let j = id*10; j < 5+id*10; j++) {
+    for (let j = 0; j < 2 ; j++) {
+        
+        k = j + id*10
+        // 创建div
+        i = k+1
+        //create array
+        const index = String(i);
+        const div = createDiv_Delta(index);
+        // 将div添加到页面中，这里假设你要添加到body中
+        rowElement.innerHTML += div
+        fetch('./demo/prompt/'+index+'delta_src.txt')
+        .then(response => response.text())
+        .then(data => {
+          // 使用正则表达式找出所有用[]包裹的文字
+          const regex = /\[(.*?)\]/g;
+          let match;
+          const parts = [];
+          let lastIndex = 0;
+          while ((match = regex.exec(data)) !== null) {
+            // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
+            const marked = `<strong style="font-size: larger;"> [${match[1]}]</strong>`;
+            // 将原文中的匹配文字替换为突出显示的文字
+            parts.push(data.slice(lastIndex, match.index), marked);
+            lastIndex = regex.lastIndex;
+          }
+          parts.push(data.slice(lastIndex));
+          // 将处理后的文字显示在页面上
+          document.getElementById(index).innerHTML += parts.join('');
+          fetch('./demo/prompt/'+index+'delta_tgt.txt')
+          .then(response => response.text())
+          .then(data => {
+            // 使用正则表达式找出所有用[]包裹的文字
+            const regex = /\[(.*?)\]/g;
+            let match;
+            const parts = [];
+            let lastIndex = 0;
+            while ((match = regex.exec(data)) !== null) {
+              // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
+              const marked = `<strong style="font-size: larger;">[${match[1]}]</strong>`;
+              // 将原文中的匹配文字替换为突出显示的文字
+              parts.push(data.slice(lastIndex, match.index), marked);
+              lastIndex = regex.lastIndex;
+            }
+            parts.push(data.slice(lastIndex));
+            // 将处理后的文字显示在页面上
+            document.getElementById(index+'tgt').innerHTML += parts.join('');
+            document.getElementById(index+'ddim').innerHTML += parts.join('');
+            document.getElementById(index+'ddpm').innerHTML += parts.join('');                                    
+            document.getElementById(index+'sdedit').innerHTML += parts.join('');
+            document.getElementById(index+'musicmagus').innerHTML += parts.join('');
+          });
+        });
+    }
+}
 // module.exports = { createRow };
 
 // 创建一个函数，用于生成HTML字符串
