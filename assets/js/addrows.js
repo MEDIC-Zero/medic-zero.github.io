@@ -274,7 +274,7 @@ function createRow_Delta(id) {
     rowid = "row_delta"+id
     const rowElement = document.getElementById(rowid);
     // for (let j = id*10; j < 5+id*10; j++) {
-    for (let j = 0; j < 2 ; j++) {
+    for (let j = 0; j < 6 ; j++) {
         
         k = j + id*10
         // 创建div
