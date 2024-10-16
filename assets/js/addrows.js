@@ -559,13 +559,13 @@ function createDivdic2(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-cac.wav" type="audio/mpeg">
+                        <source src="./demo/ablation/${index}_dic-msac.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}diccac"> <strong style="font-size: larger;">w/CAC:</strong>
+                <p style="text-align: center;" id="${index}dicmsac"> <strong style="font-size: larger;">w/o MSA Control:</strong>
                 </p>
             </div>
         </div>
@@ -573,13 +573,13 @@ function createDivdic2(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-msac.wav" type="audio/mpeg">
+                        <source src="./demo/ablation/${index}_dic-cac.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dicmsac"> <strong style="font-size: larger;">w/MSAC:</strong>
+                <p style="text-align: center;" id="${index}diccac"> <strong style="font-size: larger;">w/o CA Control:</strong>
                 </p>
             </div>
         </div>
@@ -593,7 +593,7 @@ function createDivdic2(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dicwohb"> <strong style="font-size: larger;">w/o HB:</strong>
+                <p style="text-align: center;" id="${index}dicwohb"> <strong style="font-size: larger;">w/o Harmonic Branch:</strong>
                 </p>
             </div>
         </div>
